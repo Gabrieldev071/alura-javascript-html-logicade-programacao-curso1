@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    
+
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+    
+        }
+    
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+    
+    
+        var vitorias = parseInt(prompt("Entre com o número de vitórias."));
+
+        var empates = parseInt(prompt("Entre com o número de empates."));
+        var pontos = vitorias  * 3 + empates;
+
+        mostra("Os pontos do seu time são " + pontos);
+    
+  //Como a função prompt sempre retorna o que digitamos no formato texto, ou seja, como um string, é uma boa prática
+  // sempre convertermos o valor digitado para número quando nossa intenção é ler um número. Vamos analisar esta instrução: 
+  //  var convidados = parseInt(prompt("Número de convidados"));
+ 
+  //A função prompt retorna o que digitamos como string e esse retorno é passado para parseInt. É esta função que recebe uma string e a converte para
+  //número. Agora, como temos dois números ligados, não acontecerá mais a concatenação, mas sim a soma.
+
+    </script>
+
+
+
+</body>
+</html>

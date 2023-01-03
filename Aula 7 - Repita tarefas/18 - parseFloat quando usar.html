@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParseFloat</title>
+</head>
+<body>
+    
+    <script>
+
+    function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    }
+
+    function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+    }
+    
+    var tentativas = 1;
+    var numeroPensado = Math.round(Math.random() * 10);
+
+    while(tentativas <= 3 ){
+
+        var chute = parseFloat(prompt("Digite seu Chute!"));  //parseFloat():
+
+        if(chute == numeroPensado) {
+
+                mostra("Você ACERTOU, o número pensado era " + numeroPensado + "!");
+                break; // ele quebra o looping 
+            //  tentativas = 4 //ele quebra o looping 
+        } else {
+
+                mostra("Você ERROU!");
+          }   
+         tentativas++; 
+    }     
+
+        mostra("FIM");
+// if(chute != numeroPensado) {
+
+//     mostra("Você errou, o número pensado foi " + numeroPensado);
+// }
+
+///
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aceitando apenas números</title>
+</head>
+<body>
+    
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+    
+        }
+    
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idade = parseInt(prompt("Digite sua idade"));
+
+        while( isNaN(idade) ) {
+            idade = parseInt(prompt("Digite sua idade"));    
+}
+
+        alert(idade);   
+
+        // Outra forma seria fazer isNaN(idade) == true, mas não é necessário testar se true é igual a true, o resultado será true. 
+        // É por isso que passamos direto para o while isNan(idade) que retorna já verdadeiro ou falso.
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

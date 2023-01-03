@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprimento da circunferência</title>
+</head>
+
+<body>
+    <script>
+
+    function pulaLinha() {
+        document.write("<br>");
+
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function circunferencia(num2, pi, raio) {
+    
+        return (num2 * pi) * raio  // C = 2.π.r   
+       
+    }
+
+     var pergunta1 = prompt("Qual o valor de π(pi)? Adote o valor de π = 3.14");
+     var perguntaRaio = prompt("Qual o valor de do RAIO?");  
+     var dois = 2
+     var resultado = circunferencia(dois, pergunta1, perguntaRaio);
+
+    mostra("<h3>O cálculo do comprimento da circunferência é: " + "<stron>" + resultado + "</strong></h3>");
+
+    document.write("Sabendo que a fórmula para calcular o cumprimento de uma circunfência é (C = 2.π.r), ");
+
+    mostra("substitua os valores nas caixas de texto de seu navegador e faça o teste com o exemplo abaixo: ");
+    pulaLinha();40
+    mostra("Qual o comprimento de uma circunferência de <strong>raio 40 cm?</strong> Adote o valor de π(pi) = 3.14!");
+
+    </script>
+
+</body>
+</html>

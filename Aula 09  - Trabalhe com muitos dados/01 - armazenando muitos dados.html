@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare com meu segredo</title>
+</head>
+<body>
+    
+
+<input/>
+<button>Compare com o meu segredo!</button> 
+    
+    <script>
+                 //    0  1  2 3 4  índices 
+    var segredos = [5,7,10,2,3];
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+        var achou = false;
+
+    for(var posicao = 0; posicao < segredos.length; posicao++) { // o item length verifica e retorna a quandidade de elementos que a variável tem
+
+        if(input.value == segredos[posicao]) {
+
+            alert("Você ACERTOU!");
+            achou = true;
+            break;
+        }   
+    }
+
+        if(achou == false) {
+            alert("Você ERROU!");
+        }
+
+            input.value = "";
+            input.focus();
+
+    }
+    var button = document.querySelector("button");
+
+        button.onclick = verifica; //ele guarda a função dentro do botão (onclick)
+
+    </script>
+
+
+</body>
+</html>

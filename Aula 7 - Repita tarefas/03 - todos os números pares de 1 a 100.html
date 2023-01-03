@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetir enquanto...</title>
+</head>
+ 
+<body>
+    
+
+    <script>
+
+        function pulaLinha() {
+            document.write("<br>");
+    
+        }
+    
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var numerosPares = 0
+		var limite = parseInt(prompt("Digite o número máximo de impressão:"));
+        
+        while(numerosPares <= limite) {
+
+            mostra("O número par é: " + numerosPares);
+            numerosPares = numerosPares + 2; 
+            pulaLinha();
+        }
+			mostra("FIM");
+
+    //     var contador = 2;
+    //     while(contador <= 100) {
+    //     mostra(contador);
+    //     contador = contador + 2; // incrementa de dois em dois
+
+    // Parabéns! O contador começa valendo 2 e a cada repetição ele é incrementado com mais dois. 
+    // Sendo assim, teremos 2, 4, 6, 8... até chegar a 100! 
+    // Quando o contador atingir 102 o while se recusará a repetir, assim, a próxima instrução será executada.
+    // mostra("FIM");
+
+    </script>

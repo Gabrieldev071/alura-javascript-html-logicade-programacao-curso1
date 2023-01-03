@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Advinha!</title>
+</head>
+<body>
+    
+    <script>
+
+    function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+    }
+
+    function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+    }
+    
+    var tentativas = 1;
+    var numeroPensado = Math.round(Math.random() * 10);
+    console.log(numeroPensado);
+    
+    while(tentativas <= 3 ){
+
+        var chute = parseInt(prompt("Digite seu Chute!"));
+
+        if(chute == numeroPensado) {
+
+                mostra("Você ACERTOU, o número pensado era " + numeroPensado + "!");
+                break; // ele quebra o looping 
+            //  tentativas = 4 //ele quebra o looping 
+        } else {
+
+                mostra("Você ERROU!");
+          }   
+         tentativas++; 
+    }     
+
+        mostra("FIM");
+
+
+//  while para a criação de loops de repetição;
+// if's e elses que criam condições de causa e consequência;
+// Math.random que retorna um número pseudoaleatório;
+// Math.round responsável por arredondar números decimais em valores inteiros;
+// prompt que cria uma caixa de interação com o usuário;
+// parseInt que converte string em um valor de base definido. Neste caso a string que será analisada é um valor numérico que será convertido implicitamente em um numeral;
+// break que é utilizado para interromper loops de repetição.
+
+
+    </script>
+
+
+</body>
+</html>
